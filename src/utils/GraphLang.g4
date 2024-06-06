@@ -16,8 +16,10 @@ tipo:
     'CADENA' ;
 
 expresion:
-    ID|
-    ;
+    CADENA |
+    ENTERO |
+    DECIMAL |
+    BOOLEANO;
 
 // Tokens
 ID: [a-zA-Z_][a-zA-Z_0-9]* ;
