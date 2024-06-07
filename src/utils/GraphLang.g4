@@ -4,7 +4,8 @@ programa: sentencia* EOF ;
 
 //Reglas
 sentencia:
-    declaracionVariable;
+    declaracionVariable |
+    imprimir;
 
 declaracionVariable:
     tipo ID '=' expresion ';';
@@ -15,11 +16,46 @@ tipo:
     'BOOLEANO'|
     'CADENA' ;
 
+tipoForma:
+    'CIRCULO' |
+    'CUADRADO' |
+    'RECTANGULO' |
+    'TRIANGULO';
+
+definicionForma:
+    'tipo:' tipoForma ',' |
+    'radio:' numero ',' |
+    'ancho:' numero ',' |
+    'alto:' numero ',' |
+    'vertex:' '[' numero ',' numero ']';
+
+definicionTransformacion:
+    'trasladar:' '[' numero ',' numero ']' ',' | 'rotar:' numero;
+
+// Expresiones
 expresion:
-    CADENA |
-    ENTERO |
-    DECIMAL |
-    BOOLEANO;
+    expresionPrimaria (opAritmetico expresionPrimaria | opLogico expresionPrimaria | opComparacion expresionPrimaria)*;
+
+expresionPrimaria:
+    literal | ID | '(' expresion ')' | '!' expresionPrimaria;
+
+opAritmetico: 
+    '+' | '-' | '*' | '/';
+
+opLogico:
+    '&&' | '||';
+
+opComparacion:
+    '==' | '!=' | '>' | '<' | '>=' | '<=';
+
+literal:
+    ENTERO | DECIMAL | BOOLEANO | CADENA;
+
+numero:
+    ENTERO | DECIMAL;
+
+imprimir:
+    'IMPRIMIR' '(' expresion ')' ';';
 
 // Tokens
 ID: [a-zA-Z_][a-zA-Z_0-9]* ;
