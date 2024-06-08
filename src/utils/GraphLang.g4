@@ -5,10 +5,34 @@ programa: sentencia* EOF ;
 //Reglas
 sentencia:
     declaracionVariable |
+    estructuraControl |
     imprimir;
 
 declaracionVariable:
     tipo ID '=' expresion ';';
+
+declaracionForma:
+    'FORMA' ID '{' definicionForma* '}' ';';
+
+declaracionTransformacion:
+    'TRANSFORMACION' ID '{' definicionTransformacion* '}' ';';
+
+declaracionEscena:
+    'ESCENA' '{' 'FORMAS:' '[' ID (',' ID)* ']' '}' ';';
+
+estructuraControl:
+    sentenciaIf |
+    sentenciaWhile |
+    sentenciaFor;
+
+sentenciaIf:
+    'SI' '(' expresion ')' '{' sentencia* '}' ('SINO' '{' sentencia* '}')?;
+
+sentenciaWhile:
+    'MIENTRAS' '(' expresion ')' '{' sentencia* '}';
+
+sentenciaFor:
+    'PARA' '(' declaracionVariable expresion ';' expresion ')' '{' sentencia* '}';
 
 tipo:
     'ENTERO' |
