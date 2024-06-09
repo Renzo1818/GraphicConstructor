@@ -17,6 +17,15 @@ class GraphLangListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by GraphLangParser#declaraciones.
+    def enterDeclaraciones(self, ctx:GraphLangParser.DeclaracionesContext):
+        pass
+
+    # Exit a parse tree produced by GraphLangParser#declaraciones.
+    def exitDeclaraciones(self, ctx:GraphLangParser.DeclaracionesContext):
+        pass
+
+
     # Enter a parse tree produced by GraphLangParser#sentencia.
     def enterSentencia(self, ctx:GraphLangParser.SentenciaContext):
         pass
@@ -32,6 +41,24 @@ class GraphLangListener(ParseTreeListener):
 
     # Exit a parse tree produced by GraphLangParser#declaracionVariable.
     def exitDeclaracionVariable(self, ctx:GraphLangParser.DeclaracionVariableContext):
+        pass
+
+
+    # Enter a parse tree produced by GraphLangParser#declaracionIncremental.
+    def enterDeclaracionIncremental(self, ctx:GraphLangParser.DeclaracionIncrementalContext):
+        pass
+
+    # Exit a parse tree produced by GraphLangParser#declaracionIncremental.
+    def exitDeclaracionIncremental(self, ctx:GraphLangParser.DeclaracionIncrementalContext):
+        pass
+
+
+    # Enter a parse tree produced by GraphLangParser#imprimir.
+    def enterImprimir(self, ctx:GraphLangParser.ImprimirContext):
+        pass
+
+    # Exit a parse tree produced by GraphLangParser#imprimir.
+    def exitImprimir(self, ctx:GraphLangParser.ImprimirContext):
         pass
 
 
@@ -98,6 +125,51 @@ class GraphLangListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by GraphLangParser#bloque.
+    def enterBloque(self, ctx:GraphLangParser.BloqueContext):
+        pass
+
+    # Exit a parse tree produced by GraphLangParser#bloque.
+    def exitBloque(self, ctx:GraphLangParser.BloqueContext):
+        pass
+
+
+    # Enter a parse tree produced by GraphLangParser#expresion.
+    def enterExpresion(self, ctx:GraphLangParser.ExpresionContext):
+        pass
+
+    # Exit a parse tree produced by GraphLangParser#expresion.
+    def exitExpresion(self, ctx:GraphLangParser.ExpresionContext):
+        pass
+
+
+    # Enter a parse tree produced by GraphLangParser#expresionComparativa.
+    def enterExpresionComparativa(self, ctx:GraphLangParser.ExpresionComparativaContext):
+        pass
+
+    # Exit a parse tree produced by GraphLangParser#expresionComparativa.
+    def exitExpresionComparativa(self, ctx:GraphLangParser.ExpresionComparativaContext):
+        pass
+
+
+    # Enter a parse tree produced by GraphLangParser#expresionOperacional.
+    def enterExpresionOperacional(self, ctx:GraphLangParser.ExpresionOperacionalContext):
+        pass
+
+    # Exit a parse tree produced by GraphLangParser#expresionOperacional.
+    def exitExpresionOperacional(self, ctx:GraphLangParser.ExpresionOperacionalContext):
+        pass
+
+
+    # Enter a parse tree produced by GraphLangParser#expresionAritmetica.
+    def enterExpresionAritmetica(self, ctx:GraphLangParser.ExpresionAritmeticaContext):
+        pass
+
+    # Exit a parse tree produced by GraphLangParser#expresionAritmetica.
+    def exitExpresionAritmetica(self, ctx:GraphLangParser.ExpresionAritmeticaContext):
+        pass
+
+
     # Enter a parse tree produced by GraphLangParser#tipo.
     def enterTipo(self, ctx:GraphLangParser.TipoContext):
         pass
@@ -134,21 +206,12 @@ class GraphLangListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by GraphLangParser#expresion.
-    def enterExpresion(self, ctx:GraphLangParser.ExpresionContext):
+    # Enter a parse tree produced by GraphLangParser#opAsignacion.
+    def enterOpAsignacion(self, ctx:GraphLangParser.OpAsignacionContext):
         pass
 
-    # Exit a parse tree produced by GraphLangParser#expresion.
-    def exitExpresion(self, ctx:GraphLangParser.ExpresionContext):
-        pass
-
-
-    # Enter a parse tree produced by GraphLangParser#expresionPrimaria.
-    def enterExpresionPrimaria(self, ctx:GraphLangParser.ExpresionPrimariaContext):
-        pass
-
-    # Exit a parse tree produced by GraphLangParser#expresionPrimaria.
-    def exitExpresionPrimaria(self, ctx:GraphLangParser.ExpresionPrimariaContext):
+    # Exit a parse tree produced by GraphLangParser#opAsignacion.
+    def exitOpAsignacion(self, ctx:GraphLangParser.OpAsignacionContext):
         pass
 
 
@@ -158,6 +221,15 @@ class GraphLangListener(ParseTreeListener):
 
     # Exit a parse tree produced by GraphLangParser#opAritmetico.
     def exitOpAritmetico(self, ctx:GraphLangParser.OpAritmeticoContext):
+        pass
+
+
+    # Enter a parse tree produced by GraphLangParser#opIncrementales.
+    def enterOpIncrementales(self, ctx:GraphLangParser.OpIncrementalesContext):
+        pass
+
+    # Exit a parse tree produced by GraphLangParser#opIncrementales.
+    def exitOpIncrementales(self, ctx:GraphLangParser.OpIncrementalesContext):
         pass
 
 
@@ -194,15 +266,6 @@ class GraphLangListener(ParseTreeListener):
 
     # Exit a parse tree produced by GraphLangParser#numero.
     def exitNumero(self, ctx:GraphLangParser.NumeroContext):
-        pass
-
-
-    # Enter a parse tree produced by GraphLangParser#imprimir.
-    def enterImprimir(self, ctx:GraphLangParser.ImprimirContext):
-        pass
-
-    # Exit a parse tree produced by GraphLangParser#imprimir.
-    def exitImprimir(self, ctx:GraphLangParser.ImprimirContext):
         pass
 
 

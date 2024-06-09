@@ -1,24 +1,36 @@
 grammar GraphLang;
 
-programa: sentencia* EOF ;
+programa: declaraciones* sentencia* EOF ;
 
-//Reglas
-sentencia:
+declaraciones:
+    declaracionForma |
+    declaracionTransformacion |
+    declaracionEscena;
+
+sentencia: 
     declaracionVariable |
     estructuraControl |
+    expresionOperacional |
+    expresionAritmetica |
     imprimir;
 
 declaracionVariable:
-    tipo ID '=' expresion ';';
+    tipo ID opAsignacion literal FIN;
+
+declaracionIncremental:
+    ID opIncrementales;
+
+imprimir:
+    'IMPRIMIR' '(' (literal | ID) ')' FIN;
 
 declaracionForma:
-    'FORMA' ID '{' definicionForma* '}' ';';
+    'FORMA' ID '{' definicionForma* '}' FIN;
 
 declaracionTransformacion:
-    'TRANSFORMACION' ID '{' definicionTransformacion* '}' ';';
+    'TRANSFORMACION' ID '{' definicionTransformacion* '}' FIN;
 
 declaracionEscena:
-    'ESCENA' '{' 'FORMAS:' '[' ID (',' ID)* ']' '}' ';';
+    'ESCENA' '{' 'FORMAS:' '[' ID (',' ID)* ']' '}' FIN;
 
 estructuraControl:
     sentenciaIf |
@@ -26,13 +38,28 @@ estructuraControl:
     sentenciaFor;
 
 sentenciaIf:
-    'SI' '(' expresion ')' '{' sentencia* '}' ('SINO' '{' sentencia* '}')?;
+    'SI' '(' expresion ')' bloque ('SINO' bloque)?;
 
 sentenciaWhile:
-    'MIENTRAS' '(' expresion ')' '{' sentencia* '}';
+    'MIENTRAS' '(' expresionComparativa ')' bloque;
 
 sentenciaFor:
-    'PARA' '(' declaracionVariable expresion ';' expresion ')' '{' sentencia* '}';
+    'PARA' '(' declaracionVariable FIN expresionComparativa FIN declaracionIncremental ')' bloque;
+
+bloque:
+    '{' sentencia* '}';
+
+expresion:
+    expresionComparativa (opLogico expresionComparativa)*;
+
+expresionComparativa:
+    ID opComparacion ENTERO opLogico;
+
+expresionOperacional:
+    ID opAsignacion (ID | numero) FIN;
+
+expresionAritmetica:
+    ID opAsignacion ((ID | numero) opAritmetico)* FIN;
 
 tipo:
     'ENTERO' |
@@ -56,15 +83,14 @@ definicionForma:
 definicionTransformacion:
     'trasladar:' '[' numero ',' numero ']' ',' | 'rotar:' numero;
 
-// Expresiones
-expresion:
-    expresionPrimaria (opAritmetico expresionPrimaria | opLogico expresionPrimaria | opComparacion expresionPrimaria)*;
-
-expresionPrimaria:
-    literal | ID | '(' expresion ')' | '!' expresionPrimaria;
+opAsignacion:
+    '+=' | '-=' | '*=' | '/=' | '=';
 
 opAritmetico: 
     '+' | '-' | '*' | '/';
+
+opIncrementales:
+    '++' | '--';
 
 opLogico:
     '&&' | '||';
@@ -78,13 +104,11 @@ literal:
 numero:
     ENTERO | DECIMAL;
 
-imprimir:
-    'IMPRIMIR' '(' expresion ')' ';';
-
 // Tokens
 ID: [a-zA-Z_][a-zA-Z_0-9]* ;
+FIN: ';';
 ENTERO: [0-9]+ ;
 DECIMAL: [0-9]+'.'[0-9]+ ;
 BOOLEANO: 'verdadero' | 'falso' ;
-CADENA: '"' [a-zA-Z_][a-zA-Z_0-9]* '"' ;
+CADENA: '"' .*? '"' ;
 ESPACIOS: [ \t\r\n]+ -> skip ;
