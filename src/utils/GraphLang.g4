@@ -41,7 +41,7 @@ sentenciaIf:
     'SI' '(' expresion ')' bloque ('SINO' bloque)?;
 
 sentenciaWhile:
-    'MIENTRAS' '(' expresionComparativa ')' bloque;
+    'MIENTRAS' '(' expresion ')' bloque;
 
 sentenciaFor:
     'PARA' '(' declaracionVariable FIN expresionComparativa FIN declaracionIncremental ')' bloque;
@@ -59,7 +59,7 @@ expresionOperacional:
     ID opAsignacion (ID | numero) FIN;
 
 expresionAritmetica:
-    ID opAsignacion ((ID | numero) opAritmetico)* FIN;
+    ID opAsignacion ((ID | numero) opAritmetico (ID | numero))+ FIN;
 
 tipo:
     'ENTERO' |
