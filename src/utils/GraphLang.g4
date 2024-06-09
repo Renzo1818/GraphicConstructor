@@ -53,7 +53,7 @@ expresion:
     expresionComparativa (opLogico expresionComparativa)*;
 
 expresionComparativa:
-    ID opComparacion ENTERO opLogico;
+    ID opComparacion ENTERO;
 
 expresionOperacional:
     ID opAsignacion (ID | numero) FIN;
