@@ -1,19 +1,15 @@
 from .Figura import Figura
 
-import pygame
+import matplotlib.pyplot as plt
 
 class Rectangulo(Figura):
     def __init__(self, params):
         super().__init__('RECTANGULO', params)
 
-    def draw(self, screen, color, font):
-        pygame.draw.rect(screen, color, (*self.params['vertex'], int(self.params['ancho']), int(self.params['alto'])), 2)
-        vertices = [
-            (self.params['vertex'][0], self.params['vertex'][1]),
-            (self.params['vertex'][0] + self.params['ancho'], self.params['vertex'][1]),
-            (self.params['vertex'][0], self.params['vertex'][1] + self.params['alto']),
-            (self.params['vertex'][0] + self.params['ancho'], self.params['vertex'][1] + self.params['alto'])
-        ]
-        for vx, vy in vertices:
-            pygame.draw.circle(screen, color, (vx, vy), 5)
-            self.show_coordinates(screen, font, (vx, vy))
+    def draw(self, ax):
+        vertex = self.params['vertex'][0]
+        x, y = vertex[0], vertex[1]
+        ancho = self.params['ancho']
+        alto = self.params['alto']
+        rect = plt.Rectangle((x, y), ancho, alto, linewidth=2, edgecolor='black', facecolor='none')
+        ax.add_artist(rect)
