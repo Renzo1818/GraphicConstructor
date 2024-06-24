@@ -152,21 +152,21 @@ class GraphLangListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by GraphLangParser#expresionOperacional.
-    def enterExpresionOperacional(self, ctx:GraphLangParser.ExpresionOperacionalContext):
-        pass
-
-    # Exit a parse tree produced by GraphLangParser#expresionOperacional.
-    def exitExpresionOperacional(self, ctx:GraphLangParser.ExpresionOperacionalContext):
-        pass
-
-
     # Enter a parse tree produced by GraphLangParser#expresionAritmetica.
     def enterExpresionAritmetica(self, ctx:GraphLangParser.ExpresionAritmeticaContext):
         pass
 
     # Exit a parse tree produced by GraphLangParser#expresionAritmetica.
     def exitExpresionAritmetica(self, ctx:GraphLangParser.ExpresionAritmeticaContext):
+        pass
+
+
+    # Enter a parse tree produced by GraphLangParser#expresionAritmeticaDetalle.
+    def enterExpresionAritmeticaDetalle(self, ctx:GraphLangParser.ExpresionAritmeticaDetalleContext):
+        pass
+
+    # Exit a parse tree produced by GraphLangParser#expresionAritmeticaDetalle.
+    def exitExpresionAritmeticaDetalle(self, ctx:GraphLangParser.ExpresionAritmeticaDetalleContext):
         pass
 
 
@@ -194,6 +194,15 @@ class GraphLangListener(ParseTreeListener):
 
     # Exit a parse tree produced by GraphLangParser#definicionForma.
     def exitDefinicionForma(self, ctx:GraphLangParser.DefinicionFormaContext):
+        pass
+
+
+    # Enter a parse tree produced by GraphLangParser#vertex.
+    def enterVertex(self, ctx:GraphLangParser.VertexContext):
+        pass
+
+    # Exit a parse tree produced by GraphLangParser#vertex.
+    def exitVertex(self, ctx:GraphLangParser.VertexContext):
         pass
 
 

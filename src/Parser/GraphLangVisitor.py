@@ -89,13 +89,13 @@ class GraphLangVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by GraphLangParser#expresionOperacional.
-    def visitExpresionOperacional(self, ctx:GraphLangParser.ExpresionOperacionalContext):
+    # Visit a parse tree produced by GraphLangParser#expresionAritmetica.
+    def visitExpresionAritmetica(self, ctx:GraphLangParser.ExpresionAritmeticaContext):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by GraphLangParser#expresionAritmetica.
-    def visitExpresionAritmetica(self, ctx:GraphLangParser.ExpresionAritmeticaContext):
+    # Visit a parse tree produced by GraphLangParser#expresionAritmeticaDetalle.
+    def visitExpresionAritmeticaDetalle(self, ctx:GraphLangParser.ExpresionAritmeticaDetalleContext):
         return self.visitChildren(ctx)
 
 
@@ -111,6 +111,11 @@ class GraphLangVisitor(ParseTreeVisitor):
 
     # Visit a parse tree produced by GraphLangParser#definicionForma.
     def visitDefinicionForma(self, ctx:GraphLangParser.DefinicionFormaContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by GraphLangParser#vertex.
+    def visitVertex(self, ctx:GraphLangParser.VertexContext):
         return self.visitChildren(ctx)
 
 

@@ -10,7 +10,7 @@ declaraciones:
 sentencia: 
     declaracionVariable |
     estructuraControl |
-    expresionOperacional |
+    declaracionIncremental |
     expresionAritmetica |
     imprimir;
 
@@ -38,13 +38,13 @@ estructuraControl:
     sentenciaFor;
 
 sentenciaIf:
-    'SI' '(' expresion ')' bloque ('SINO' bloque)?;
+    'SI' '(' expresion ')' bloque ( 'SINO' bloque )?;
 
 sentenciaWhile:
     'MIENTRAS' '(' expresion ')' bloque;
 
 sentenciaFor:
-    'PARA' '(' declaracionVariable FIN expresionComparativa FIN declaracionIncremental ')' bloque;
+    'PARA' '(' declaracionVariable expresionComparativa FIN declaracionIncremental ')' bloque;
 
 bloque:
     '{' sentencia* '}';
@@ -55,11 +55,11 @@ expresion:
 expresionComparativa:
     ID opComparacion ENTERO;
 
-expresionOperacional:
-    ID opAsignacion (ID | numero) FIN;
-
 expresionAritmetica:
-    ID opAsignacion ((ID | numero) opAritmetico (ID | numero))+ FIN;
+    ID opAsignacion expresionAritmeticaDetalle FIN;
+
+expresionAritmeticaDetalle:
+    numero (opAritmetico numero)*;
 
 tipo:
     'ENTERO' |
@@ -78,13 +78,14 @@ definicionForma:
     'radio:' numero ',' |
     'ancho:' numero ',' |
     'alto:' numero ',' |
-    'vertex:' '[' numero ',' numero ']';
+    'vertex:' vertex (',' vertex)* ;
 
-definicionTransformacion:
-    'trasladar:' '[' numero ',' numero ']' ',' | 'rotar:' numero;
+vertex: '[' numero ',' numero ']' ;
 
+definicionTransformacion: 'trasladar:' '[' numero ',' numero ']' ',' 'figura:' ID FIN
+                         ;
 opAsignacion:
-    '+=' | '-=' | '*=' | '/=' | '=';
+    '=';
 
 opAritmetico: 
     '+' | '-' | '*' | '/';
@@ -107,8 +108,8 @@ numero:
 // Tokens
 ID: [a-zA-Z_][a-zA-Z_0-9]* ;
 FIN: ';';
-ENTERO: [0-9]+ ;
-DECIMAL: [0-9]+'.'[0-9]+ ;
+ENTERO: '-'? [0-9]+ ;
+DECIMAL: '-'? [0-9]+'.'[0-9]+ ;
 BOOLEANO: 'verdadero' | 'falso' ;
 CADENA: '"' .*? '"' ;
 ESPACIOS: [ \t\r\n]+ -> skip ;

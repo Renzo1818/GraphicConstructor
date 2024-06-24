@@ -10,98 +10,96 @@ else:
 
 def serializedATN():
     return [
-        4,1,57,275,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,2,6,7,
+        4,1,53,272,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,2,6,7,
         6,2,7,7,7,2,8,7,8,2,9,7,9,2,10,7,10,2,11,7,11,2,12,7,12,2,13,7,13,
         2,14,7,14,2,15,7,15,2,16,7,16,2,17,7,17,2,18,7,18,2,19,7,19,2,20,
         7,20,2,21,7,21,2,22,7,22,2,23,7,23,2,24,7,24,2,25,7,25,2,26,7,26,
-        2,27,7,27,2,28,7,28,1,0,5,0,60,8,0,10,0,12,0,63,9,0,1,0,5,0,66,8,
-        0,10,0,12,0,69,9,0,1,0,1,0,1,1,1,1,1,1,3,1,76,8,1,1,2,1,2,1,2,1,
-        2,1,2,3,2,83,8,2,1,3,1,3,1,3,1,3,1,3,1,3,1,4,1,4,1,4,1,5,1,5,1,5,
-        1,5,3,5,98,8,5,1,5,1,5,1,5,1,6,1,6,1,6,1,6,5,6,107,8,6,10,6,12,6,
-        110,9,6,1,6,1,6,1,6,1,7,1,7,1,7,1,7,5,7,119,8,7,10,7,12,7,122,9,
-        7,1,7,1,7,1,7,1,8,1,8,1,8,1,8,1,8,1,8,1,8,5,8,134,8,8,10,8,12,8,
-        137,9,8,1,8,1,8,1,8,1,8,1,9,1,9,1,9,3,9,146,8,9,1,10,1,10,1,10,1,
-        10,1,10,1,10,1,10,3,10,155,8,10,1,11,1,11,1,11,1,11,1,11,1,11,1,
-        12,1,12,1,12,1,12,1,12,1,12,1,12,1,12,1,12,1,12,1,13,1,13,5,13,175,
-        8,13,10,13,12,13,178,9,13,1,13,1,13,1,14,1,14,1,14,1,14,5,14,186,
-        8,14,10,14,12,14,189,9,14,1,15,1,15,1,15,1,15,1,16,1,16,1,16,1,16,
-        3,16,199,8,16,1,16,1,16,1,17,1,17,1,17,1,17,3,17,207,8,17,1,17,1,
-        17,1,17,3,17,212,8,17,4,17,214,8,17,11,17,12,17,215,1,17,1,17,1,
-        18,1,18,1,19,1,19,1,20,1,20,1,20,1,20,1,20,1,20,1,20,1,20,1,20,1,
-        20,1,20,1,20,1,20,1,20,1,20,1,20,1,20,1,20,1,20,1,20,1,20,1,20,1,
-        20,3,20,247,8,20,1,21,1,21,1,21,1,21,1,21,1,21,1,21,1,21,1,21,1,
-        21,3,21,259,8,21,1,22,1,22,1,23,1,23,1,24,1,24,1,25,1,25,1,26,1,
-        26,1,27,1,27,1,28,1,28,1,28,0,0,29,0,2,4,6,8,10,12,14,16,18,20,22,
-        24,26,28,30,32,34,36,38,40,42,44,46,48,50,52,54,56,0,9,1,0,17,20,
-        1,0,21,24,1,0,32,36,1,0,37,40,1,0,41,42,1,0,43,44,1,0,45,50,1,0,
-        53,56,1,0,53,54,271,0,61,1,0,0,0,2,75,1,0,0,0,4,82,1,0,0,0,6,84,
-        1,0,0,0,8,90,1,0,0,0,10,93,1,0,0,0,12,102,1,0,0,0,14,114,1,0,0,0,
-        16,126,1,0,0,0,18,145,1,0,0,0,20,147,1,0,0,0,22,156,1,0,0,0,24,162,
-        1,0,0,0,26,172,1,0,0,0,28,181,1,0,0,0,30,190,1,0,0,0,32,194,1,0,
-        0,0,34,202,1,0,0,0,36,219,1,0,0,0,38,221,1,0,0,0,40,246,1,0,0,0,
-        42,258,1,0,0,0,44,260,1,0,0,0,46,262,1,0,0,0,48,264,1,0,0,0,50,266,
-        1,0,0,0,52,268,1,0,0,0,54,270,1,0,0,0,56,272,1,0,0,0,58,60,3,2,1,
-        0,59,58,1,0,0,0,60,63,1,0,0,0,61,59,1,0,0,0,61,62,1,0,0,0,62,67,
-        1,0,0,0,63,61,1,0,0,0,64,66,3,4,2,0,65,64,1,0,0,0,66,69,1,0,0,0,
-        67,65,1,0,0,0,67,68,1,0,0,0,68,70,1,0,0,0,69,67,1,0,0,0,70,71,5,
-        0,0,1,71,1,1,0,0,0,72,76,3,12,6,0,73,76,3,14,7,0,74,76,3,16,8,0,
-        75,72,1,0,0,0,75,73,1,0,0,0,75,74,1,0,0,0,76,3,1,0,0,0,77,83,3,6,
-        3,0,78,83,3,18,9,0,79,83,3,32,16,0,80,83,3,34,17,0,81,83,3,10,5,
-        0,82,77,1,0,0,0,82,78,1,0,0,0,82,79,1,0,0,0,82,80,1,0,0,0,82,81,
-        1,0,0,0,83,5,1,0,0,0,84,85,3,36,18,0,85,86,5,51,0,0,86,87,3,44,22,
-        0,87,88,3,54,27,0,88,89,5,52,0,0,89,7,1,0,0,0,90,91,5,51,0,0,91,
-        92,3,48,24,0,92,9,1,0,0,0,93,94,5,1,0,0,94,97,5,2,0,0,95,98,3,54,
-        27,0,96,98,5,51,0,0,97,95,1,0,0,0,97,96,1,0,0,0,98,99,1,0,0,0,99,
-        100,5,3,0,0,100,101,5,52,0,0,101,11,1,0,0,0,102,103,5,4,0,0,103,
-        104,5,51,0,0,104,108,5,5,0,0,105,107,3,40,20,0,106,105,1,0,0,0,107,
-        110,1,0,0,0,108,106,1,0,0,0,108,109,1,0,0,0,109,111,1,0,0,0,110,
-        108,1,0,0,0,111,112,5,6,0,0,112,113,5,52,0,0,113,13,1,0,0,0,114,
-        115,5,7,0,0,115,116,5,51,0,0,116,120,5,5,0,0,117,119,3,42,21,0,118,
-        117,1,0,0,0,119,122,1,0,0,0,120,118,1,0,0,0,120,121,1,0,0,0,121,
-        123,1,0,0,0,122,120,1,0,0,0,123,124,5,6,0,0,124,125,5,52,0,0,125,
-        15,1,0,0,0,126,127,5,8,0,0,127,128,5,5,0,0,128,129,5,9,0,0,129,130,
-        5,10,0,0,130,135,5,51,0,0,131,132,5,11,0,0,132,134,5,51,0,0,133,
-        131,1,0,0,0,134,137,1,0,0,0,135,133,1,0,0,0,135,136,1,0,0,0,136,
-        138,1,0,0,0,137,135,1,0,0,0,138,139,5,12,0,0,139,140,5,6,0,0,140,
-        141,5,52,0,0,141,17,1,0,0,0,142,146,3,20,10,0,143,146,3,22,11,0,
-        144,146,3,24,12,0,145,142,1,0,0,0,145,143,1,0,0,0,145,144,1,0,0,
-        0,146,19,1,0,0,0,147,148,5,13,0,0,148,149,5,2,0,0,149,150,3,28,14,
-        0,150,151,5,3,0,0,151,154,3,26,13,0,152,153,5,14,0,0,153,155,3,26,
-        13,0,154,152,1,0,0,0,154,155,1,0,0,0,155,21,1,0,0,0,156,157,5,15,
-        0,0,157,158,5,2,0,0,158,159,3,28,14,0,159,160,5,3,0,0,160,161,3,
-        26,13,0,161,23,1,0,0,0,162,163,5,16,0,0,163,164,5,2,0,0,164,165,
-        3,6,3,0,165,166,5,52,0,0,166,167,3,30,15,0,167,168,5,52,0,0,168,
-        169,3,8,4,0,169,170,5,3,0,0,170,171,3,26,13,0,171,25,1,0,0,0,172,
-        176,5,5,0,0,173,175,3,4,2,0,174,173,1,0,0,0,175,178,1,0,0,0,176,
-        174,1,0,0,0,176,177,1,0,0,0,177,179,1,0,0,0,178,176,1,0,0,0,179,
-        180,5,6,0,0,180,27,1,0,0,0,181,187,3,30,15,0,182,183,3,50,25,0,183,
-        184,3,30,15,0,184,186,1,0,0,0,185,182,1,0,0,0,186,189,1,0,0,0,187,
-        185,1,0,0,0,187,188,1,0,0,0,188,29,1,0,0,0,189,187,1,0,0,0,190,191,
-        5,51,0,0,191,192,3,52,26,0,192,193,5,53,0,0,193,31,1,0,0,0,194,195,
-        5,51,0,0,195,198,3,44,22,0,196,199,5,51,0,0,197,199,3,56,28,0,198,
-        196,1,0,0,0,198,197,1,0,0,0,199,200,1,0,0,0,200,201,5,52,0,0,201,
-        33,1,0,0,0,202,203,5,51,0,0,203,213,3,44,22,0,204,207,5,51,0,0,205,
-        207,3,56,28,0,206,204,1,0,0,0,206,205,1,0,0,0,207,208,1,0,0,0,208,
-        211,3,46,23,0,209,212,5,51,0,0,210,212,3,56,28,0,211,209,1,0,0,0,
-        211,210,1,0,0,0,212,214,1,0,0,0,213,206,1,0,0,0,214,215,1,0,0,0,
-        215,213,1,0,0,0,215,216,1,0,0,0,216,217,1,0,0,0,217,218,5,52,0,0,
-        218,35,1,0,0,0,219,220,7,0,0,0,220,37,1,0,0,0,221,222,7,1,0,0,222,
-        39,1,0,0,0,223,224,5,25,0,0,224,225,3,38,19,0,225,226,5,11,0,0,226,
-        247,1,0,0,0,227,228,5,26,0,0,228,229,3,56,28,0,229,230,5,11,0,0,
-        230,247,1,0,0,0,231,232,5,27,0,0,232,233,3,56,28,0,233,234,5,11,
-        0,0,234,247,1,0,0,0,235,236,5,28,0,0,236,237,3,56,28,0,237,238,5,
-        11,0,0,238,247,1,0,0,0,239,240,5,29,0,0,240,241,5,10,0,0,241,242,
-        3,56,28,0,242,243,5,11,0,0,243,244,3,56,28,0,244,245,5,12,0,0,245,
-        247,1,0,0,0,246,223,1,0,0,0,246,227,1,0,0,0,246,231,1,0,0,0,246,
-        235,1,0,0,0,246,239,1,0,0,0,247,41,1,0,0,0,248,249,5,30,0,0,249,
-        250,5,10,0,0,250,251,3,56,28,0,251,252,5,11,0,0,252,253,3,56,28,
-        0,253,254,5,12,0,0,254,255,5,11,0,0,255,259,1,0,0,0,256,257,5,31,
-        0,0,257,259,3,56,28,0,258,248,1,0,0,0,258,256,1,0,0,0,259,43,1,0,
-        0,0,260,261,7,2,0,0,261,45,1,0,0,0,262,263,7,3,0,0,263,47,1,0,0,
-        0,264,265,7,4,0,0,265,49,1,0,0,0,266,267,7,5,0,0,267,51,1,0,0,0,
-        268,269,7,6,0,0,269,53,1,0,0,0,270,271,7,7,0,0,271,55,1,0,0,0,272,
-        273,7,8,0,0,273,57,1,0,0,0,18,61,67,75,82,97,108,120,135,145,154,
-        176,187,198,206,211,215,246,258
+        2,27,7,27,2,28,7,28,2,29,7,29,1,0,5,0,62,8,0,10,0,12,0,65,9,0,1,
+        0,5,0,68,8,0,10,0,12,0,71,9,0,1,0,1,0,1,1,1,1,1,1,3,1,78,8,1,1,2,
+        1,2,1,2,1,2,1,2,3,2,85,8,2,1,3,1,3,1,3,1,3,1,3,1,3,1,4,1,4,1,4,1,
+        5,1,5,1,5,1,5,3,5,100,8,5,1,5,1,5,1,5,1,6,1,6,1,6,1,6,5,6,109,8,
+        6,10,6,12,6,112,9,6,1,6,1,6,1,6,1,7,1,7,1,7,1,7,5,7,121,8,7,10,7,
+        12,7,124,9,7,1,7,1,7,1,7,1,8,1,8,1,8,1,8,1,8,1,8,1,8,5,8,136,8,8,
+        10,8,12,8,139,9,8,1,8,1,8,1,8,1,8,1,9,1,9,1,9,3,9,148,8,9,1,10,1,
+        10,1,10,1,10,1,10,1,10,1,10,3,10,157,8,10,1,11,1,11,1,11,1,11,1,
+        11,1,11,1,12,1,12,1,12,1,12,1,12,1,12,1,12,1,12,1,12,1,13,1,13,5,
+        13,176,8,13,10,13,12,13,179,9,13,1,13,1,13,1,14,1,14,1,14,1,14,5,
+        14,187,8,14,10,14,12,14,190,9,14,1,15,1,15,1,15,1,15,1,16,1,16,1,
+        16,1,16,1,16,1,17,1,17,1,17,1,17,5,17,205,8,17,10,17,12,17,208,9,
+        17,1,18,1,18,1,19,1,19,1,20,1,20,1,20,1,20,1,20,1,20,1,20,1,20,1,
+        20,1,20,1,20,1,20,1,20,1,20,1,20,1,20,1,20,1,20,1,20,1,20,5,20,234,
+        8,20,10,20,12,20,237,9,20,3,20,239,8,20,1,21,1,21,1,21,1,21,1,21,
+        1,21,1,22,1,22,1,22,1,22,1,22,1,22,1,22,1,22,1,22,1,22,1,22,1,23,
+        1,23,1,24,1,24,1,25,1,25,1,26,1,26,1,27,1,27,1,28,1,28,1,29,1,29,
+        1,29,0,0,30,0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,
+        38,40,42,44,46,48,50,52,54,56,58,0,8,1,0,17,20,1,0,21,24,1,0,33,
+        36,1,0,37,38,1,0,39,40,1,0,41,46,1,0,49,52,1,0,49,50,264,0,63,1,
+        0,0,0,2,77,1,0,0,0,4,84,1,0,0,0,6,86,1,0,0,0,8,92,1,0,0,0,10,95,
+        1,0,0,0,12,104,1,0,0,0,14,116,1,0,0,0,16,128,1,0,0,0,18,147,1,0,
+        0,0,20,149,1,0,0,0,22,158,1,0,0,0,24,164,1,0,0,0,26,173,1,0,0,0,
+        28,182,1,0,0,0,30,191,1,0,0,0,32,195,1,0,0,0,34,200,1,0,0,0,36,209,
+        1,0,0,0,38,211,1,0,0,0,40,238,1,0,0,0,42,240,1,0,0,0,44,246,1,0,
+        0,0,46,257,1,0,0,0,48,259,1,0,0,0,50,261,1,0,0,0,52,263,1,0,0,0,
+        54,265,1,0,0,0,56,267,1,0,0,0,58,269,1,0,0,0,60,62,3,2,1,0,61,60,
+        1,0,0,0,62,65,1,0,0,0,63,61,1,0,0,0,63,64,1,0,0,0,64,69,1,0,0,0,
+        65,63,1,0,0,0,66,68,3,4,2,0,67,66,1,0,0,0,68,71,1,0,0,0,69,67,1,
+        0,0,0,69,70,1,0,0,0,70,72,1,0,0,0,71,69,1,0,0,0,72,73,5,0,0,1,73,
+        1,1,0,0,0,74,78,3,12,6,0,75,78,3,14,7,0,76,78,3,16,8,0,77,74,1,0,
+        0,0,77,75,1,0,0,0,77,76,1,0,0,0,78,3,1,0,0,0,79,85,3,6,3,0,80,85,
+        3,18,9,0,81,85,3,8,4,0,82,85,3,32,16,0,83,85,3,10,5,0,84,79,1,0,
+        0,0,84,80,1,0,0,0,84,81,1,0,0,0,84,82,1,0,0,0,84,83,1,0,0,0,85,5,
+        1,0,0,0,86,87,3,36,18,0,87,88,5,47,0,0,88,89,3,46,23,0,89,90,3,56,
+        28,0,90,91,5,48,0,0,91,7,1,0,0,0,92,93,5,47,0,0,93,94,3,50,25,0,
+        94,9,1,0,0,0,95,96,5,1,0,0,96,99,5,2,0,0,97,100,3,56,28,0,98,100,
+        5,47,0,0,99,97,1,0,0,0,99,98,1,0,0,0,100,101,1,0,0,0,101,102,5,3,
+        0,0,102,103,5,48,0,0,103,11,1,0,0,0,104,105,5,4,0,0,105,106,5,47,
+        0,0,106,110,5,5,0,0,107,109,3,40,20,0,108,107,1,0,0,0,109,112,1,
+        0,0,0,110,108,1,0,0,0,110,111,1,0,0,0,111,113,1,0,0,0,112,110,1,
+        0,0,0,113,114,5,6,0,0,114,115,5,48,0,0,115,13,1,0,0,0,116,117,5,
+        7,0,0,117,118,5,47,0,0,118,122,5,5,0,0,119,121,3,44,22,0,120,119,
+        1,0,0,0,121,124,1,0,0,0,122,120,1,0,0,0,122,123,1,0,0,0,123,125,
+        1,0,0,0,124,122,1,0,0,0,125,126,5,6,0,0,126,127,5,48,0,0,127,15,
+        1,0,0,0,128,129,5,8,0,0,129,130,5,5,0,0,130,131,5,9,0,0,131,132,
+        5,10,0,0,132,137,5,47,0,0,133,134,5,11,0,0,134,136,5,47,0,0,135,
+        133,1,0,0,0,136,139,1,0,0,0,137,135,1,0,0,0,137,138,1,0,0,0,138,
+        140,1,0,0,0,139,137,1,0,0,0,140,141,5,12,0,0,141,142,5,6,0,0,142,
+        143,5,48,0,0,143,17,1,0,0,0,144,148,3,20,10,0,145,148,3,22,11,0,
+        146,148,3,24,12,0,147,144,1,0,0,0,147,145,1,0,0,0,147,146,1,0,0,
+        0,148,19,1,0,0,0,149,150,5,13,0,0,150,151,5,2,0,0,151,152,3,28,14,
+        0,152,153,5,3,0,0,153,156,3,26,13,0,154,155,5,14,0,0,155,157,3,26,
+        13,0,156,154,1,0,0,0,156,157,1,0,0,0,157,21,1,0,0,0,158,159,5,15,
+        0,0,159,160,5,2,0,0,160,161,3,28,14,0,161,162,5,3,0,0,162,163,3,
+        26,13,0,163,23,1,0,0,0,164,165,5,16,0,0,165,166,5,2,0,0,166,167,
+        3,6,3,0,167,168,3,30,15,0,168,169,5,48,0,0,169,170,3,8,4,0,170,171,
+        5,3,0,0,171,172,3,26,13,0,172,25,1,0,0,0,173,177,5,5,0,0,174,176,
+        3,4,2,0,175,174,1,0,0,0,176,179,1,0,0,0,177,175,1,0,0,0,177,178,
+        1,0,0,0,178,180,1,0,0,0,179,177,1,0,0,0,180,181,5,6,0,0,181,27,1,
+        0,0,0,182,188,3,30,15,0,183,184,3,52,26,0,184,185,3,30,15,0,185,
+        187,1,0,0,0,186,183,1,0,0,0,187,190,1,0,0,0,188,186,1,0,0,0,188,
+        189,1,0,0,0,189,29,1,0,0,0,190,188,1,0,0,0,191,192,5,47,0,0,192,
+        193,3,54,27,0,193,194,5,49,0,0,194,31,1,0,0,0,195,196,5,47,0,0,196,
+        197,3,46,23,0,197,198,3,34,17,0,198,199,5,48,0,0,199,33,1,0,0,0,
+        200,206,3,58,29,0,201,202,3,48,24,0,202,203,3,58,29,0,203,205,1,
+        0,0,0,204,201,1,0,0,0,205,208,1,0,0,0,206,204,1,0,0,0,206,207,1,
+        0,0,0,207,35,1,0,0,0,208,206,1,0,0,0,209,210,7,0,0,0,210,37,1,0,
+        0,0,211,212,7,1,0,0,212,39,1,0,0,0,213,214,5,25,0,0,214,215,3,38,
+        19,0,215,216,5,11,0,0,216,239,1,0,0,0,217,218,5,26,0,0,218,219,3,
+        58,29,0,219,220,5,11,0,0,220,239,1,0,0,0,221,222,5,27,0,0,222,223,
+        3,58,29,0,223,224,5,11,0,0,224,239,1,0,0,0,225,226,5,28,0,0,226,
+        227,3,58,29,0,227,228,5,11,0,0,228,239,1,0,0,0,229,230,5,29,0,0,
+        230,235,3,42,21,0,231,232,5,11,0,0,232,234,3,42,21,0,233,231,1,0,
+        0,0,234,237,1,0,0,0,235,233,1,0,0,0,235,236,1,0,0,0,236,239,1,0,
+        0,0,237,235,1,0,0,0,238,213,1,0,0,0,238,217,1,0,0,0,238,221,1,0,
+        0,0,238,225,1,0,0,0,238,229,1,0,0,0,239,41,1,0,0,0,240,241,5,10,
+        0,0,241,242,3,58,29,0,242,243,5,11,0,0,243,244,3,58,29,0,244,245,
+        5,12,0,0,245,43,1,0,0,0,246,247,5,30,0,0,247,248,5,10,0,0,248,249,
+        3,58,29,0,249,250,5,11,0,0,250,251,3,58,29,0,251,252,5,12,0,0,252,
+        253,5,11,0,0,253,254,5,31,0,0,254,255,5,47,0,0,255,256,5,48,0,0,
+        256,45,1,0,0,0,257,258,5,32,0,0,258,47,1,0,0,0,259,260,7,2,0,0,260,
+        49,1,0,0,0,261,262,7,3,0,0,262,51,1,0,0,0,263,264,7,4,0,0,264,53,
+        1,0,0,0,265,266,7,5,0,0,266,55,1,0,0,0,267,268,7,6,0,0,268,57,1,
+        0,0,0,269,270,7,7,0,0,270,59,1,0,0,0,15,63,69,77,84,99,110,122,137,
+        147,156,177,188,206,235,238
     ]
 
 class GraphLangParser ( Parser ):
@@ -120,13 +118,11 @@ class GraphLangParser ( Parser ):
                      "'PARA'", "'ENTERO'", "'DECIMAL'", "'BOOLEANO'", "'CADENA'", 
                      "'CIRCULO'", "'CUADRADO'", "'RECTANGULO'", "'TRIANGULO'", 
                      "'tipo:'", "'radio:'", "'ancho:'", "'alto:'", "'vertex:'", 
-                     "'trasladar:'", "'rotar:'", "'+='", "'-='", "'*='", 
-                     "'/='", "'='", "'+'", "'-'", "'*'", "'/'", "'++'", 
-                     "'--'", "'&&'", "'||'", "'=='", "'!='", "'>'", "'<'", 
-                     "'>='", "'<='", "<INVALID>", "';'" ]
+                     "'trasladar:'", "'figura:'", "'='", "'+'", "'-'", "'*'", 
+                     "'/'", "'++'", "'--'", "'&&'", "'||'", "'=='", "'!='", 
+                     "'>'", "'<'", "'>='", "'<='", "<INVALID>", "';'" ]
 
     symbolicNames = [ "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
-                      "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
                       "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
                       "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
                       "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
@@ -156,29 +152,30 @@ class GraphLangParser ( Parser ):
     RULE_bloque = 13
     RULE_expresion = 14
     RULE_expresionComparativa = 15
-    RULE_expresionOperacional = 16
-    RULE_expresionAritmetica = 17
+    RULE_expresionAritmetica = 16
+    RULE_expresionAritmeticaDetalle = 17
     RULE_tipo = 18
     RULE_tipoForma = 19
     RULE_definicionForma = 20
-    RULE_definicionTransformacion = 21
-    RULE_opAsignacion = 22
-    RULE_opAritmetico = 23
-    RULE_opIncrementales = 24
-    RULE_opLogico = 25
-    RULE_opComparacion = 26
-    RULE_literal = 27
-    RULE_numero = 28
+    RULE_vertex = 21
+    RULE_definicionTransformacion = 22
+    RULE_opAsignacion = 23
+    RULE_opAritmetico = 24
+    RULE_opIncrementales = 25
+    RULE_opLogico = 26
+    RULE_opComparacion = 27
+    RULE_literal = 28
+    RULE_numero = 29
 
     ruleNames =  [ "programa", "declaraciones", "sentencia", "declaracionVariable", 
                    "declaracionIncremental", "imprimir", "declaracionForma", 
                    "declaracionTransformacion", "declaracionEscena", "estructuraControl", 
                    "sentenciaIf", "sentenciaWhile", "sentenciaFor", "bloque", 
-                   "expresion", "expresionComparativa", "expresionOperacional", 
-                   "expresionAritmetica", "tipo", "tipoForma", "definicionForma", 
-                   "definicionTransformacion", "opAsignacion", "opAritmetico", 
-                   "opIncrementales", "opLogico", "opComparacion", "literal", 
-                   "numero" ]
+                   "expresion", "expresionComparativa", "expresionAritmetica", 
+                   "expresionAritmeticaDetalle", "tipo", "tipoForma", "definicionForma", 
+                   "vertex", "definicionTransformacion", "opAsignacion", 
+                   "opAritmetico", "opIncrementales", "opLogico", "opComparacion", 
+                   "literal", "numero" ]
 
     EOF = Token.EOF
     T__0=1
@@ -227,17 +224,13 @@ class GraphLangParser ( Parser ):
     T__43=44
     T__44=45
     T__45=46
-    T__46=47
-    T__47=48
-    T__48=49
-    T__49=50
-    ID=51
-    FIN=52
-    ENTERO=53
-    DECIMAL=54
-    BOOLEANO=55
-    CADENA=56
-    ESPACIOS=57
+    ID=47
+    FIN=48
+    ENTERO=49
+    DECIMAL=50
+    BOOLEANO=51
+    CADENA=52
+    ESPACIOS=53
 
     def __init__(self, input:TokenStream, output:TextIO = sys.stdout):
         super().__init__(input, output)
@@ -299,27 +292,27 @@ class GraphLangParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 61
+            self.state = 63
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             while (((_la) & ~0x3f) == 0 and ((1 << _la) & 400) != 0):
-                self.state = 58
+                self.state = 60
                 self.declaraciones()
-                self.state = 63
+                self.state = 65
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 
-            self.state = 67
+            self.state = 69
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while (((_la) & ~0x3f) == 0 and ((1 << _la) & 2251799815757826) != 0):
-                self.state = 64
+            while (((_la) & ~0x3f) == 0 and ((1 << _la) & 140737490427906) != 0):
+                self.state = 66
                 self.sentencia()
-                self.state = 69
+                self.state = 71
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 
-            self.state = 70
+            self.state = 72
             self.match(GraphLangParser.EOF)
         except RecognitionException as re:
             localctx.exception = re
@@ -374,22 +367,22 @@ class GraphLangParser ( Parser ):
         localctx = GraphLangParser.DeclaracionesContext(self, self._ctx, self.state)
         self.enterRule(localctx, 2, self.RULE_declaraciones)
         try:
-            self.state = 75
+            self.state = 77
             self._errHandler.sync(self)
             token = self._input.LA(1)
             if token in [4]:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 72
+                self.state = 74
                 self.declaracionForma()
                 pass
             elif token in [7]:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 73
+                self.state = 75
                 self.declaracionTransformacion()
                 pass
             elif token in [8]:
                 self.enterOuterAlt(localctx, 3)
-                self.state = 74
+                self.state = 76
                 self.declaracionEscena()
                 pass
             else:
@@ -419,8 +412,8 @@ class GraphLangParser ( Parser ):
             return self.getTypedRuleContext(GraphLangParser.EstructuraControlContext,0)
 
 
-        def expresionOperacional(self):
-            return self.getTypedRuleContext(GraphLangParser.ExpresionOperacionalContext,0)
+        def declaracionIncremental(self):
+            return self.getTypedRuleContext(GraphLangParser.DeclaracionIncrementalContext,0)
 
 
         def expresionAritmetica(self):
@@ -456,36 +449,36 @@ class GraphLangParser ( Parser ):
         localctx = GraphLangParser.SentenciaContext(self, self._ctx, self.state)
         self.enterRule(localctx, 4, self.RULE_sentencia)
         try:
-            self.state = 82
+            self.state = 84
             self._errHandler.sync(self)
             la_ = self._interp.adaptivePredict(self._input,3,self._ctx)
             if la_ == 1:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 77
+                self.state = 79
                 self.declaracionVariable()
                 pass
 
             elif la_ == 2:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 78
+                self.state = 80
                 self.estructuraControl()
                 pass
 
             elif la_ == 3:
                 self.enterOuterAlt(localctx, 3)
-                self.state = 79
-                self.expresionOperacional()
+                self.state = 81
+                self.declaracionIncremental()
                 pass
 
             elif la_ == 4:
                 self.enterOuterAlt(localctx, 4)
-                self.state = 80
+                self.state = 82
                 self.expresionAritmetica()
                 pass
 
             elif la_ == 5:
                 self.enterOuterAlt(localctx, 5)
-                self.state = 81
+                self.state = 83
                 self.imprimir()
                 pass
 
@@ -550,15 +543,15 @@ class GraphLangParser ( Parser ):
         self.enterRule(localctx, 6, self.RULE_declaracionVariable)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 84
-            self.tipo()
-            self.state = 85
-            self.match(GraphLangParser.ID)
             self.state = 86
-            self.opAsignacion()
+            self.tipo()
             self.state = 87
-            self.literal()
+            self.match(GraphLangParser.ID)
             self.state = 88
+            self.opAsignacion()
+            self.state = 89
+            self.literal()
+            self.state = 90
             self.match(GraphLangParser.FIN)
         except RecognitionException as re:
             localctx.exception = re
@@ -609,9 +602,9 @@ class GraphLangParser ( Parser ):
         self.enterRule(localctx, 8, self.RULE_declaracionIncremental)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 90
+            self.state = 92
             self.match(GraphLangParser.ID)
-            self.state = 91
+            self.state = 93
             self.opIncrementales()
         except RecognitionException as re:
             localctx.exception = re
@@ -665,27 +658,27 @@ class GraphLangParser ( Parser ):
         self.enterRule(localctx, 10, self.RULE_imprimir)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 93
+            self.state = 95
             self.match(GraphLangParser.T__0)
-            self.state = 94
+            self.state = 96
             self.match(GraphLangParser.T__1)
-            self.state = 97
+            self.state = 99
             self._errHandler.sync(self)
             token = self._input.LA(1)
-            if token in [53, 54, 55, 56]:
-                self.state = 95
+            if token in [49, 50, 51, 52]:
+                self.state = 97
                 self.literal()
                 pass
-            elif token in [51]:
-                self.state = 96
+            elif token in [47]:
+                self.state = 98
                 self.match(GraphLangParser.ID)
                 pass
             else:
                 raise NoViableAltException(self)
 
-            self.state = 99
+            self.state = 101
             self.match(GraphLangParser.T__2)
-            self.state = 100
+            self.state = 102
             self.match(GraphLangParser.FIN)
         except RecognitionException as re:
             localctx.exception = re
@@ -743,25 +736,25 @@ class GraphLangParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 102
-            self.match(GraphLangParser.T__3)
-            self.state = 103
-            self.match(GraphLangParser.ID)
             self.state = 104
+            self.match(GraphLangParser.T__3)
+            self.state = 105
+            self.match(GraphLangParser.ID)
+            self.state = 106
             self.match(GraphLangParser.T__4)
-            self.state = 108
+            self.state = 110
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             while (((_la) & ~0x3f) == 0 and ((1 << _la) & 1040187392) != 0):
-                self.state = 105
+                self.state = 107
                 self.definicionForma()
-                self.state = 110
+                self.state = 112
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 
-            self.state = 111
+            self.state = 113
             self.match(GraphLangParser.T__5)
-            self.state = 112
+            self.state = 114
             self.match(GraphLangParser.FIN)
         except RecognitionException as re:
             localctx.exception = re
@@ -819,25 +812,25 @@ class GraphLangParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 114
-            self.match(GraphLangParser.T__6)
-            self.state = 115
-            self.match(GraphLangParser.ID)
             self.state = 116
+            self.match(GraphLangParser.T__6)
+            self.state = 117
+            self.match(GraphLangParser.ID)
+            self.state = 118
             self.match(GraphLangParser.T__4)
-            self.state = 120
+            self.state = 122
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while _la==30 or _la==31:
-                self.state = 117
+            while _la==30:
+                self.state = 119
                 self.definicionTransformacion()
-                self.state = 122
+                self.state = 124
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 
-            self.state = 123
+            self.state = 125
             self.match(GraphLangParser.T__5)
-            self.state = 124
+            self.state = 126
             self.match(GraphLangParser.FIN)
         except RecognitionException as re:
             localctx.exception = re
@@ -891,33 +884,33 @@ class GraphLangParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 126
-            self.match(GraphLangParser.T__7)
-            self.state = 127
-            self.match(GraphLangParser.T__4)
             self.state = 128
-            self.match(GraphLangParser.T__8)
+            self.match(GraphLangParser.T__7)
             self.state = 129
-            self.match(GraphLangParser.T__9)
+            self.match(GraphLangParser.T__4)
             self.state = 130
+            self.match(GraphLangParser.T__8)
+            self.state = 131
+            self.match(GraphLangParser.T__9)
+            self.state = 132
             self.match(GraphLangParser.ID)
-            self.state = 135
+            self.state = 137
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             while _la==11:
-                self.state = 131
+                self.state = 133
                 self.match(GraphLangParser.T__10)
-                self.state = 132
+                self.state = 134
                 self.match(GraphLangParser.ID)
-                self.state = 137
+                self.state = 139
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 
-            self.state = 138
-            self.match(GraphLangParser.T__11)
-            self.state = 139
-            self.match(GraphLangParser.T__5)
             self.state = 140
+            self.match(GraphLangParser.T__11)
+            self.state = 141
+            self.match(GraphLangParser.T__5)
+            self.state = 142
             self.match(GraphLangParser.FIN)
         except RecognitionException as re:
             localctx.exception = re
@@ -972,22 +965,22 @@ class GraphLangParser ( Parser ):
         localctx = GraphLangParser.EstructuraControlContext(self, self._ctx, self.state)
         self.enterRule(localctx, 18, self.RULE_estructuraControl)
         try:
-            self.state = 145
+            self.state = 147
             self._errHandler.sync(self)
             token = self._input.LA(1)
             if token in [13]:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 142
+                self.state = 144
                 self.sentenciaIf()
                 pass
             elif token in [15]:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 143
+                self.state = 145
                 self.sentenciaWhile()
                 pass
             elif token in [16]:
                 self.enterOuterAlt(localctx, 3)
-                self.state = 144
+                self.state = 146
                 self.sentenciaFor()
                 pass
             else:
@@ -1047,23 +1040,23 @@ class GraphLangParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 147
-            self.match(GraphLangParser.T__12)
-            self.state = 148
-            self.match(GraphLangParser.T__1)
             self.state = 149
-            self.expresion()
+            self.match(GraphLangParser.T__12)
             self.state = 150
-            self.match(GraphLangParser.T__2)
+            self.match(GraphLangParser.T__1)
             self.state = 151
+            self.expresion()
+            self.state = 152
+            self.match(GraphLangParser.T__2)
+            self.state = 153
             self.bloque()
-            self.state = 154
+            self.state = 156
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             if _la==14:
-                self.state = 152
+                self.state = 154
                 self.match(GraphLangParser.T__13)
-                self.state = 153
+                self.state = 155
                 self.bloque()
 
 
@@ -1117,15 +1110,15 @@ class GraphLangParser ( Parser ):
         self.enterRule(localctx, 22, self.RULE_sentenciaWhile)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 156
-            self.match(GraphLangParser.T__14)
-            self.state = 157
-            self.match(GraphLangParser.T__1)
             self.state = 158
-            self.expresion()
+            self.match(GraphLangParser.T__14)
             self.state = 159
-            self.match(GraphLangParser.T__2)
+            self.match(GraphLangParser.T__1)
             self.state = 160
+            self.expresion()
+            self.state = 161
+            self.match(GraphLangParser.T__2)
+            self.state = 162
             self.bloque()
         except RecognitionException as re:
             localctx.exception = re
@@ -1147,15 +1140,12 @@ class GraphLangParser ( Parser ):
             return self.getTypedRuleContext(GraphLangParser.DeclaracionVariableContext,0)
 
 
-        def FIN(self, i:int=None):
-            if i is None:
-                return self.getTokens(GraphLangParser.FIN)
-            else:
-                return self.getToken(GraphLangParser.FIN, i)
-
         def expresionComparativa(self):
             return self.getTypedRuleContext(GraphLangParser.ExpresionComparativaContext,0)
 
+
+        def FIN(self):
+            return self.getToken(GraphLangParser.FIN, 0)
 
         def declaracionIncremental(self):
             return self.getTypedRuleContext(GraphLangParser.DeclaracionIncrementalContext,0)
@@ -1191,23 +1181,21 @@ class GraphLangParser ( Parser ):
         self.enterRule(localctx, 24, self.RULE_sentenciaFor)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 162
-            self.match(GraphLangParser.T__15)
-            self.state = 163
-            self.match(GraphLangParser.T__1)
             self.state = 164
-            self.declaracionVariable()
+            self.match(GraphLangParser.T__15)
             self.state = 165
-            self.match(GraphLangParser.FIN)
+            self.match(GraphLangParser.T__1)
             self.state = 166
-            self.expresionComparativa()
+            self.declaracionVariable()
             self.state = 167
-            self.match(GraphLangParser.FIN)
+            self.expresionComparativa()
             self.state = 168
-            self.declaracionIncremental()
+            self.match(GraphLangParser.FIN)
             self.state = 169
-            self.match(GraphLangParser.T__2)
+            self.declaracionIncremental()
             self.state = 170
+            self.match(GraphLangParser.T__2)
+            self.state = 171
             self.bloque()
         except RecognitionException as re:
             localctx.exception = re
@@ -1259,19 +1247,19 @@ class GraphLangParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 172
+            self.state = 173
             self.match(GraphLangParser.T__4)
-            self.state = 176
+            self.state = 177
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while (((_la) & ~0x3f) == 0 and ((1 << _la) & 2251799815757826) != 0):
-                self.state = 173
+            while (((_la) & ~0x3f) == 0 and ((1 << _la) & 140737490427906) != 0):
+                self.state = 174
                 self.sentencia()
-                self.state = 178
+                self.state = 179
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 
-            self.state = 179
+            self.state = 180
             self.match(GraphLangParser.T__5)
         except RecognitionException as re:
             localctx.exception = re
@@ -1330,17 +1318,17 @@ class GraphLangParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 181
+            self.state = 182
             self.expresionComparativa()
-            self.state = 187
+            self.state = 188
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while _la==43 or _la==44:
-                self.state = 182
-                self.opLogico()
+            while _la==39 or _la==40:
                 self.state = 183
+                self.opLogico()
+                self.state = 184
                 self.expresionComparativa()
-                self.state = 189
+                self.state = 190
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 
@@ -1396,91 +1384,12 @@ class GraphLangParser ( Parser ):
         self.enterRule(localctx, 30, self.RULE_expresionComparativa)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 190
-            self.match(GraphLangParser.ID)
             self.state = 191
-            self.opComparacion()
-            self.state = 192
-            self.match(GraphLangParser.ENTERO)
-        except RecognitionException as re:
-            localctx.exception = re
-            self._errHandler.reportError(self, re)
-            self._errHandler.recover(self, re)
-        finally:
-            self.exitRule()
-        return localctx
-
-
-    class ExpresionOperacionalContext(ParserRuleContext):
-        __slots__ = 'parser'
-
-        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
-            super().__init__(parent, invokingState)
-            self.parser = parser
-
-        def ID(self, i:int=None):
-            if i is None:
-                return self.getTokens(GraphLangParser.ID)
-            else:
-                return self.getToken(GraphLangParser.ID, i)
-
-        def opAsignacion(self):
-            return self.getTypedRuleContext(GraphLangParser.OpAsignacionContext,0)
-
-
-        def FIN(self):
-            return self.getToken(GraphLangParser.FIN, 0)
-
-        def numero(self):
-            return self.getTypedRuleContext(GraphLangParser.NumeroContext,0)
-
-
-        def getRuleIndex(self):
-            return GraphLangParser.RULE_expresionOperacional
-
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterExpresionOperacional" ):
-                listener.enterExpresionOperacional(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitExpresionOperacional" ):
-                listener.exitExpresionOperacional(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitExpresionOperacional" ):
-                return visitor.visitExpresionOperacional(self)
-            else:
-                return visitor.visitChildren(self)
-
-
-
-
-    def expresionOperacional(self):
-
-        localctx = GraphLangParser.ExpresionOperacionalContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 32, self.RULE_expresionOperacional)
-        try:
-            self.enterOuterAlt(localctx, 1)
-            self.state = 194
             self.match(GraphLangParser.ID)
-            self.state = 195
-            self.opAsignacion()
-            self.state = 198
-            self._errHandler.sync(self)
-            token = self._input.LA(1)
-            if token in [51]:
-                self.state = 196
-                self.match(GraphLangParser.ID)
-                pass
-            elif token in [53, 54]:
-                self.state = 197
-                self.numero()
-                pass
-            else:
-                raise NoViableAltException(self)
-
-            self.state = 200
-            self.match(GraphLangParser.FIN)
+            self.state = 192
+            self.opComparacion()
+            self.state = 193
+            self.match(GraphLangParser.ENTERO)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -1497,32 +1406,19 @@ class GraphLangParser ( Parser ):
             super().__init__(parent, invokingState)
             self.parser = parser
 
-        def ID(self, i:int=None):
-            if i is None:
-                return self.getTokens(GraphLangParser.ID)
-            else:
-                return self.getToken(GraphLangParser.ID, i)
+        def ID(self):
+            return self.getToken(GraphLangParser.ID, 0)
 
         def opAsignacion(self):
             return self.getTypedRuleContext(GraphLangParser.OpAsignacionContext,0)
 
 
+        def expresionAritmeticaDetalle(self):
+            return self.getTypedRuleContext(GraphLangParser.ExpresionAritmeticaDetalleContext,0)
+
+
         def FIN(self):
             return self.getToken(GraphLangParser.FIN, 0)
-
-        def opAritmetico(self, i:int=None):
-            if i is None:
-                return self.getTypedRuleContexts(GraphLangParser.OpAritmeticoContext)
-            else:
-                return self.getTypedRuleContext(GraphLangParser.OpAritmeticoContext,i)
-
-
-        def numero(self, i:int=None):
-            if i is None:
-                return self.getTypedRuleContexts(GraphLangParser.NumeroContext)
-            else:
-                return self.getTypedRuleContext(GraphLangParser.NumeroContext,i)
-
 
         def getRuleIndex(self):
             return GraphLangParser.RULE_expresionAritmetica
@@ -1547,56 +1443,88 @@ class GraphLangParser ( Parser ):
     def expresionAritmetica(self):
 
         localctx = GraphLangParser.ExpresionAritmeticaContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 34, self.RULE_expresionAritmetica)
+        self.enterRule(localctx, 32, self.RULE_expresionAritmetica)
+        try:
+            self.enterOuterAlt(localctx, 1)
+            self.state = 195
+            self.match(GraphLangParser.ID)
+            self.state = 196
+            self.opAsignacion()
+            self.state = 197
+            self.expresionAritmeticaDetalle()
+            self.state = 198
+            self.match(GraphLangParser.FIN)
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.exitRule()
+        return localctx
+
+
+    class ExpresionAritmeticaDetalleContext(ParserRuleContext):
+        __slots__ = 'parser'
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
+            self.parser = parser
+
+        def numero(self, i:int=None):
+            if i is None:
+                return self.getTypedRuleContexts(GraphLangParser.NumeroContext)
+            else:
+                return self.getTypedRuleContext(GraphLangParser.NumeroContext,i)
+
+
+        def opAritmetico(self, i:int=None):
+            if i is None:
+                return self.getTypedRuleContexts(GraphLangParser.OpAritmeticoContext)
+            else:
+                return self.getTypedRuleContext(GraphLangParser.OpAritmeticoContext,i)
+
+
+        def getRuleIndex(self):
+            return GraphLangParser.RULE_expresionAritmeticaDetalle
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterExpresionAritmeticaDetalle" ):
+                listener.enterExpresionAritmeticaDetalle(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitExpresionAritmeticaDetalle" ):
+                listener.exitExpresionAritmeticaDetalle(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitExpresionAritmeticaDetalle" ):
+                return visitor.visitExpresionAritmeticaDetalle(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+
+
+    def expresionAritmeticaDetalle(self):
+
+        localctx = GraphLangParser.ExpresionAritmeticaDetalleContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 34, self.RULE_expresionAritmeticaDetalle)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 202
-            self.match(GraphLangParser.ID)
-            self.state = 203
-            self.opAsignacion()
-            self.state = 213 
+            self.state = 200
+            self.numero()
+            self.state = 206
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while True:
-                self.state = 206
-                self._errHandler.sync(self)
-                token = self._input.LA(1)
-                if token in [51]:
-                    self.state = 204
-                    self.match(GraphLangParser.ID)
-                    pass
-                elif token in [53, 54]:
-                    self.state = 205
-                    self.numero()
-                    pass
-                else:
-                    raise NoViableAltException(self)
-
-                self.state = 208
+            while (((_la) & ~0x3f) == 0 and ((1 << _la) & 128849018880) != 0):
+                self.state = 201
                 self.opAritmetico()
-                self.state = 211
-                self._errHandler.sync(self)
-                token = self._input.LA(1)
-                if token in [51]:
-                    self.state = 209
-                    self.match(GraphLangParser.ID)
-                    pass
-                elif token in [53, 54]:
-                    self.state = 210
-                    self.numero()
-                    pass
-                else:
-                    raise NoViableAltException(self)
-
-                self.state = 215 
+                self.state = 202
+                self.numero()
+                self.state = 208
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                if not ((((_la) & ~0x3f) == 0 and ((1 << _la) & 29273397577908224) != 0)):
-                    break
 
-            self.state = 217
-            self.match(GraphLangParser.FIN)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -1641,7 +1569,7 @@ class GraphLangParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 219
+            self.state = 209
             _la = self._input.LA(1)
             if not((((_la) & ~0x3f) == 0 and ((1 << _la) & 1966080) != 0)):
                 self._errHandler.recoverInline(self)
@@ -1692,7 +1620,7 @@ class GraphLangParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 221
+            self.state = 211
             _la = self._input.LA(1)
             if not((((_la) & ~0x3f) == 0 and ((1 << _la) & 31457280) != 0)):
                 self._errHandler.recoverInline(self)
@@ -1719,11 +1647,15 @@ class GraphLangParser ( Parser ):
             return self.getTypedRuleContext(GraphLangParser.TipoFormaContext,0)
 
 
-        def numero(self, i:int=None):
+        def numero(self):
+            return self.getTypedRuleContext(GraphLangParser.NumeroContext,0)
+
+
+        def vertex(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(GraphLangParser.NumeroContext)
+                return self.getTypedRuleContexts(GraphLangParser.VertexContext)
             else:
-                return self.getTypedRuleContext(GraphLangParser.NumeroContext,i)
+                return self.getTypedRuleContext(GraphLangParser.VertexContext,i)
 
 
         def getRuleIndex(self):
@@ -1750,64 +1682,128 @@ class GraphLangParser ( Parser ):
 
         localctx = GraphLangParser.DefinicionFormaContext(self, self._ctx, self.state)
         self.enterRule(localctx, 40, self.RULE_definicionForma)
+        self._la = 0 # Token type
         try:
-            self.state = 246
+            self.state = 238
             self._errHandler.sync(self)
             token = self._input.LA(1)
             if token in [25]:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 223
+                self.state = 213
                 self.match(GraphLangParser.T__24)
-                self.state = 224
+                self.state = 214
                 self.tipoForma()
-                self.state = 225
+                self.state = 215
                 self.match(GraphLangParser.T__10)
                 pass
             elif token in [26]:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 227
+                self.state = 217
                 self.match(GraphLangParser.T__25)
-                self.state = 228
+                self.state = 218
                 self.numero()
-                self.state = 229
+                self.state = 219
                 self.match(GraphLangParser.T__10)
                 pass
             elif token in [27]:
                 self.enterOuterAlt(localctx, 3)
-                self.state = 231
+                self.state = 221
                 self.match(GraphLangParser.T__26)
-                self.state = 232
+                self.state = 222
                 self.numero()
-                self.state = 233
+                self.state = 223
                 self.match(GraphLangParser.T__10)
                 pass
             elif token in [28]:
                 self.enterOuterAlt(localctx, 4)
-                self.state = 235
+                self.state = 225
                 self.match(GraphLangParser.T__27)
-                self.state = 236
+                self.state = 226
                 self.numero()
-                self.state = 237
+                self.state = 227
                 self.match(GraphLangParser.T__10)
                 pass
             elif token in [29]:
                 self.enterOuterAlt(localctx, 5)
-                self.state = 239
+                self.state = 229
                 self.match(GraphLangParser.T__28)
-                self.state = 240
-                self.match(GraphLangParser.T__9)
-                self.state = 241
-                self.numero()
-                self.state = 242
-                self.match(GraphLangParser.T__10)
-                self.state = 243
-                self.numero()
-                self.state = 244
-                self.match(GraphLangParser.T__11)
+                self.state = 230
+                self.vertex()
+                self.state = 235
+                self._errHandler.sync(self)
+                _la = self._input.LA(1)
+                while _la==11:
+                    self.state = 231
+                    self.match(GraphLangParser.T__10)
+                    self.state = 232
+                    self.vertex()
+                    self.state = 237
+                    self._errHandler.sync(self)
+                    _la = self._input.LA(1)
+
                 pass
             else:
                 raise NoViableAltException(self)
 
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.exitRule()
+        return localctx
+
+
+    class VertexContext(ParserRuleContext):
+        __slots__ = 'parser'
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
+            self.parser = parser
+
+        def numero(self, i:int=None):
+            if i is None:
+                return self.getTypedRuleContexts(GraphLangParser.NumeroContext)
+            else:
+                return self.getTypedRuleContext(GraphLangParser.NumeroContext,i)
+
+
+        def getRuleIndex(self):
+            return GraphLangParser.RULE_vertex
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterVertex" ):
+                listener.enterVertex(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitVertex" ):
+                listener.exitVertex(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitVertex" ):
+                return visitor.visitVertex(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+
+
+    def vertex(self):
+
+        localctx = GraphLangParser.VertexContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 42, self.RULE_vertex)
+        try:
+            self.enterOuterAlt(localctx, 1)
+            self.state = 240
+            self.match(GraphLangParser.T__9)
+            self.state = 241
+            self.numero()
+            self.state = 242
+            self.match(GraphLangParser.T__10)
+            self.state = 243
+            self.numero()
+            self.state = 244
+            self.match(GraphLangParser.T__11)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -1830,6 +1826,12 @@ class GraphLangParser ( Parser ):
             else:
                 return self.getTypedRuleContext(GraphLangParser.NumeroContext,i)
 
+
+        def ID(self):
+            return self.getToken(GraphLangParser.ID, 0)
+
+        def FIN(self):
+            return self.getToken(GraphLangParser.FIN, 0)
 
         def getRuleIndex(self):
             return GraphLangParser.RULE_definicionTransformacion
@@ -1854,38 +1856,29 @@ class GraphLangParser ( Parser ):
     def definicionTransformacion(self):
 
         localctx = GraphLangParser.DefinicionTransformacionContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 42, self.RULE_definicionTransformacion)
+        self.enterRule(localctx, 44, self.RULE_definicionTransformacion)
         try:
-            self.state = 258
-            self._errHandler.sync(self)
-            token = self._input.LA(1)
-            if token in [30]:
-                self.enterOuterAlt(localctx, 1)
-                self.state = 248
-                self.match(GraphLangParser.T__29)
-                self.state = 249
-                self.match(GraphLangParser.T__9)
-                self.state = 250
-                self.numero()
-                self.state = 251
-                self.match(GraphLangParser.T__10)
-                self.state = 252
-                self.numero()
-                self.state = 253
-                self.match(GraphLangParser.T__11)
-                self.state = 254
-                self.match(GraphLangParser.T__10)
-                pass
-            elif token in [31]:
-                self.enterOuterAlt(localctx, 2)
-                self.state = 256
-                self.match(GraphLangParser.T__30)
-                self.state = 257
-                self.numero()
-                pass
-            else:
-                raise NoViableAltException(self)
-
+            self.enterOuterAlt(localctx, 1)
+            self.state = 246
+            self.match(GraphLangParser.T__29)
+            self.state = 247
+            self.match(GraphLangParser.T__9)
+            self.state = 248
+            self.numero()
+            self.state = 249
+            self.match(GraphLangParser.T__10)
+            self.state = 250
+            self.numero()
+            self.state = 251
+            self.match(GraphLangParser.T__11)
+            self.state = 252
+            self.match(GraphLangParser.T__10)
+            self.state = 253
+            self.match(GraphLangParser.T__30)
+            self.state = 254
+            self.match(GraphLangParser.ID)
+            self.state = 255
+            self.match(GraphLangParser.FIN)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -1926,17 +1919,11 @@ class GraphLangParser ( Parser ):
     def opAsignacion(self):
 
         localctx = GraphLangParser.OpAsignacionContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 44, self.RULE_opAsignacion)
-        self._la = 0 # Token type
+        self.enterRule(localctx, 46, self.RULE_opAsignacion)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 260
-            _la = self._input.LA(1)
-            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & 133143986176) != 0)):
-                self._errHandler.recoverInline(self)
-            else:
-                self._errHandler.reportMatch(self)
-                self.consume()
+            self.state = 257
+            self.match(GraphLangParser.T__31)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -1977,13 +1964,13 @@ class GraphLangParser ( Parser ):
     def opAritmetico(self):
 
         localctx = GraphLangParser.OpAritmeticoContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 46, self.RULE_opAritmetico)
+        self.enterRule(localctx, 48, self.RULE_opAritmetico)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 262
+            self.state = 259
             _la = self._input.LA(1)
-            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & 2061584302080) != 0)):
+            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & 128849018880) != 0)):
                 self._errHandler.recoverInline(self)
             else:
                 self._errHandler.reportMatch(self)
@@ -2028,13 +2015,13 @@ class GraphLangParser ( Parser ):
     def opIncrementales(self):
 
         localctx = GraphLangParser.OpIncrementalesContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 48, self.RULE_opIncrementales)
+        self.enterRule(localctx, 50, self.RULE_opIncrementales)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 264
+            self.state = 261
             _la = self._input.LA(1)
-            if not(_la==41 or _la==42):
+            if not(_la==37 or _la==38):
                 self._errHandler.recoverInline(self)
             else:
                 self._errHandler.reportMatch(self)
@@ -2079,13 +2066,13 @@ class GraphLangParser ( Parser ):
     def opLogico(self):
 
         localctx = GraphLangParser.OpLogicoContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 50, self.RULE_opLogico)
+        self.enterRule(localctx, 52, self.RULE_opLogico)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 266
+            self.state = 263
             _la = self._input.LA(1)
-            if not(_la==43 or _la==44):
+            if not(_la==39 or _la==40):
                 self._errHandler.recoverInline(self)
             else:
                 self._errHandler.reportMatch(self)
@@ -2130,13 +2117,13 @@ class GraphLangParser ( Parser ):
     def opComparacion(self):
 
         localctx = GraphLangParser.OpComparacionContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 52, self.RULE_opComparacion)
+        self.enterRule(localctx, 54, self.RULE_opComparacion)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 268
+            self.state = 265
             _la = self._input.LA(1)
-            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & 2216615441596416) != 0)):
+            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & 138538465099776) != 0)):
                 self._errHandler.recoverInline(self)
             else:
                 self._errHandler.reportMatch(self)
@@ -2192,13 +2179,13 @@ class GraphLangParser ( Parser ):
     def literal(self):
 
         localctx = GraphLangParser.LiteralContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 54, self.RULE_literal)
+        self.enterRule(localctx, 56, self.RULE_literal)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 270
+            self.state = 267
             _la = self._input.LA(1)
-            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & 135107988821114880) != 0)):
+            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & 8444249301319680) != 0)):
                 self._errHandler.recoverInline(self)
             else:
                 self._errHandler.reportMatch(self)
@@ -2248,13 +2235,13 @@ class GraphLangParser ( Parser ):
     def numero(self):
 
         localctx = GraphLangParser.NumeroContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 56, self.RULE_numero)
+        self.enterRule(localctx, 58, self.RULE_numero)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 272
+            self.state = 269
             _la = self._input.LA(1)
-            if not(_la==53 or _la==54):
+            if not(_la==49 or _la==50):
                 self._errHandler.recoverInline(self)
             else:
                 self._errHandler.reportMatch(self)
