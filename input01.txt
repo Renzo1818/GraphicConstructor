@@ -1,0 +1,8 @@
+ENTERO x = 13;
+DECIMAL y = 5.3;
+ENTERO r = 0;
+CADENA c = "cadena de prueba";
+
+IMPRIMIR(x);
+
+IMPRIMIR("hola");
