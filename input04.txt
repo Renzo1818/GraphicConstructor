@@ -1,0 +1,6 @@
+ENTERO i = 0;
+
+MIENTRAS(i < 10){
+    IMPRIMIR(i);
+    i++
+}

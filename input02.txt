@@ -1,0 +1,5 @@
+ENTERO r = 0;
+
+r = 14 + 6 * 7 * 8 / 2;
+
+IMPRIMIR(r);
