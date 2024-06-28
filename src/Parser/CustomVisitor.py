@@ -61,6 +61,45 @@ class CustomVisitor(GraphLangVisitor):
             self.visit(sentencia)
         return None
     
+    # Expresión
+    def visitExpresion(self, ctx: GraphLangParser.ExpresionContext):
+        if ctx.opLogico():
+            resultado = self.visit(ctx.expresionComparativa(0))  # Empezamos con la primera expresión
+            operadores = ctx.opLogico()  # Lista de operadores lógicos
+            comparativas = ctx.expresionComparativa()  # Lista de expresiones comparativas
+
+            # Iteramos sobre los operadores y expresiones comparativas restantes
+            for i in range(1, len(comparativas)):
+                derecha = self.visit(comparativas[i])
+                op = operadores[i - 1].getText()  # Operador correspondiente
+                if op == '&&':
+                    resultado = resultado and derecha
+                elif op == '||':
+                    resultado = resultado or derecha
+            return resultado
+        else:
+            return self.visit(ctx.expresionComparativa(0))
+        
+
+    # Expresión Comparativa
+    def visitExpresionComparativa(self, ctx: GraphLangParser.ExpresionComparativaContext):
+        izquierda = self.variables[ctx.ID().getText()]
+        derecha = int(ctx.ENTERO().getText())
+        op = ctx.opComparacion().getText()
+        if op == '==':
+            return izquierda == derecha
+        elif op == '!=':
+            return izquierda != derecha
+        elif op == '>':
+            return izquierda > derecha
+        elif op == '<':
+            return izquierda < derecha
+        elif op == '>=':
+            return izquierda >= derecha
+        elif op == '<=':
+            return izquierda <= derecha
+
+
     def render_scene(self):
         if not self.scene_invocada:
             print("Error: No se ha declarado una escena para renderizar.")
