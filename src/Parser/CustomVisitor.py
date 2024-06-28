@@ -98,6 +98,36 @@ class CustomVisitor(GraphLangVisitor):
             return izquierda >= derecha
         elif op == '<=':
             return izquierda <= derecha
+        
+    def visitDeclaracionVariable(self, ctx: GraphLangParser.DeclaracionVariableContext):
+        tipo = ctx.tipo().getText()
+        nombre = ctx.ID().getText()
+        operador = ctx.opAsignacion().getText()
+        valor_ctx = ctx.literal()
+        valor = self.visitLiteral(valor_ctx)
+
+        if operador == '=':
+            self.declarar_variable(tipo, nombre, valor)
+        else:
+            print(f"Error: Operador de asignación no válido '{operador}' en línea {ctx.start.line}")
+
+        return self.visitChildren(ctx)
+    
+    def visitLiteral(self, ctx:GraphLangParser.LiteralContext):
+        literal_text = ctx.getText()
+        if ctx.ENTERO():
+            return int(literal_text)
+        elif ctx.DECIMAL():
+            return float(literal_text)
+        elif literal_text == 'verdadero':
+            return True
+        elif literal_text == 'falso':
+            return False
+        elif ctx.CADENA():
+            return literal_text[1:-1]
+        else:
+            print(f"Error: Literal no reconocido '{literal_text}' en línea {ctx.start.line}")
+            return None    
 
 
     def render_scene(self):
