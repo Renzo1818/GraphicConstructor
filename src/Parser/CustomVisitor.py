@@ -128,7 +128,57 @@ class CustomVisitor(GraphLangVisitor):
         else:
             print(f"Error: Literal no reconocido '{literal_text}' en línea {ctx.start.line}")
             return None    
+        
+    def declarar_variable(self, tipo, nombre, valor):
+        if tipo in ['ENTERO', 'DECIMAL', 'BOOLEANO', 'CADENA']:
+            if tipo == 'ENTERO':
+                if not isinstance(valor, int):
+                    raise Exception(f"Error: El valor '{valor}' no es un entero válido para la variable '{nombre}'")
+                self.variables[nombre] = int(valor)
+            elif tipo == 'DECIMAL':
+                if not isinstance(valor, float):
+                    raise Exception(f"Error: El valor '{valor}' no es un decimal válido para la variable '{nombre}'")
+                self.variables[nombre] = float(valor)
+            elif tipo == 'BOOLEANO':
+                if not isinstance(valor, bool):
+                    raise Exception(f"Error: El valor '{valor}' no es un booleano válido para la variable '{nombre}'")
+                self.variables[nombre] = bool(valor)
+            elif tipo == 'CADENA':
+                if not isinstance(valor, str):
+                    raise Exception(f"Error: El valor '{valor}' no es una cadena válida para la variable '{nombre}'")
+                self.variables[nombre] = str(valor)
+        else:
+            raise Exception(f"Error: Tipo de variable no válido '{tipo}' en la declaración de '{nombre}'")
 
+
+    def visitExpresionAritmetica(self, ctx: GraphLangParser.ExpresionAritmeticaContext):
+        variable_name = ctx.ID().getText()
+        operador = ctx.opAsignacion().getText()
+
+        # Procesar la expresión aritmética completa
+        valor = self.eval_expresion_aritmetica_detalle(ctx.expresionAritmeticaDetalle())
+        
+        if valor is not None:
+            if variable_name in self.variables:
+                tipo_variable = type(self.variables[variable_name])
+                if tipo_variable == int:
+                    valor = int(valor)
+                elif tipo_variable == float:
+                    valor = float(valor)
+                else:
+                    print(f"Error: Tipo de variable no compatible para la variable '{variable_name}' en línea {ctx.start.line}")
+                    return
+
+                if operador == '=':
+                    self.variables[variable_name] = valor
+                else:
+                    print(f"Error: Operador de asignación no válido '{operador}' en línea {ctx.start.line}")
+            else:
+                print(f"Error: La variable '{variable_name}' no está definida en línea {ctx.start.line}")
+        else:
+            print(f"Error: Valor no válido para la operación en línea {ctx.start.line}")
+
+        return self.visitChildren(ctx)
 
     def render_scene(self):
         if not self.scene_invocada:
