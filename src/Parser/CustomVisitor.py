@@ -180,6 +180,85 @@ class CustomVisitor(GraphLangVisitor):
 
         return self.visitChildren(ctx)
 
+      def eval_expresion_aritmetica_detalle(self, ctx: GraphLangParser.ExpresionAritmeticaDetalleContext):
+        def precedence(op):
+            if op in ('+', '-'):
+                return 1
+            if op in ('*', '/'):
+                return 2
+            return 0
+
+        def apply_operator(operands, operator):
+            right = operands.pop()
+            left = operands.pop()
+            if operator == '+':
+                operands.append(left + right)
+            elif operator == '-':
+                operands.append(left - right)
+            elif operator == '*':
+                operands.append(left * right)
+            elif operator == '/':
+                operands.append(left / right)
+
+        # Convert expression to postfix notation (RPN)
+        output = []
+        operators = []
+        
+        numeros = [float(n.getText()) for n in ctx.numero()]
+        operadores = [o.getText() for o in ctx.opAritmetico()]
+
+        # Intercalamos los números y operadores en una lista
+        intercalados = []
+        for i in range(len(numeros)):
+            intercalados.append(numeros[i])
+            if i < len(operadores):
+                intercalados.append(operadores[i])
+
+        for token in intercalados:
+            if isinstance(token, float):
+                output.append(token)
+            else:
+                while operators and precedence(operators[-1]) >= precedence(token):
+                    output.append(operators.pop())
+                operators.append(token)
+
+        while operators:
+            output.append(operators.pop())
+
+        # Evaluate RPN expression
+        operands = []
+        for token in output:
+            if isinstance(token, float):
+                operands.append(token)
+            else:
+                apply_operator(operands, token)
+
+        return operands[0]
+
+    def convertir_tipo(self, variable_name):
+        if variable_name in self.variables:
+            valor = self.variables[variable_name]
+            tipo = type(valor)
+            if tipo == int:
+                if isinstance(valor, float) and valor.is_integer():
+                    self.variables[variable_name] = int(valor)
+            elif tipo == float:
+                self.variables[variable_name] = float(valor)
+            elif tipo == bool:
+                self.variables[variable_name] = bool(valor)
+            elif tipo == str:
+                self.variables[variable_name] = str(valor)
+
+    
+    def visitImprimir(self, ctx: GraphLangParser.ImprimirContext):
+        valor = ctx.literal().getText() if ctx.literal() else self.variables.get(ctx.ID().getText(), None)
+        if valor is not None:
+            print(valor)
+        else:
+            print(f"Error: La variable '{ctx.ID().getText()}' no está definida en línea {ctx.start.line}")
+        return self.visitChildren(ctx)
+    
+
     def render_scene(self):
         if not self.scene_invocada:
             print("Error: No se ha declarado una escena para renderizar.")
