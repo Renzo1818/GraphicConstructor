@@ -257,7 +257,83 @@ class CustomVisitor(GraphLangVisitor):
         else:
             print(f"Error: La variable '{ctx.ID().getText()}' no está definida en línea {ctx.start.line}")
         return self.visitChildren(ctx)
+
+    def visitDeclaracionForma(self, ctx: GraphLangParser.DeclaracionFormaContext):
+        shape_id = ctx.ID().getText()
+        shape = {'id': shape_id, 'type': None, 'params': {}}
+
+        for child in ctx.definicionForma():
+            if child.tipoForma():
+                shape['type'] = child.tipoForma().getText()
+            elif 'radio:' in child.getText():
+                shape['params']['radio'] = int(child.numero().getText())
+            elif 'ancho:' in child.getText():
+                shape['params']['ancho'] = int(child.numero().getText())
+            elif 'alto:' in child.getText():
+                shape['params']['alto'] = int(child.numero().getText())
+            elif 'vertex:' in child.getText():
+                vertices = []
+                for vertex_ctx in child.vertex():
+                    x = int(vertex_ctx.numero(0).getText())
+                    y = int(vertex_ctx.numero(1).getText())
+                    vertices.append((x, y))
+                shape['params']['vertex'] = vertices
+
+        if shape['type'] == 'CIRCULO':
+            self.shapes[shape_id] = Circulo(shape['params'])
+        elif shape['type'] == 'RECTANGULO':
+            self.shapes[shape_id] = Rectangulo(shape['params'])
+        elif shape['type'] == 'CUADRADO':
+            self.shapes[shape_id] = Cuadrado(shape['params'])
+        elif shape['type'] == 'TRIANGULO':
+            self.shapes[shape_id] = Triangulo(shape['params'])
+
+        # Suponiendo que `shape` es tu diccionario
+        for key, value in shape.items():
+            print(f"{key}: {value}")
+
+        return None
+
     
+    def visitDeclaracionTransformacion(self, ctx: GraphLangParser.DeclaracionTransformacionContext):
+        transform_id = ctx.ID().getText()
+        transformations = {}
+
+        for child in ctx.definicionTransformacion():
+            if child.getChild(0).getText() == 'trasladar:':
+                translation_values = [
+                    int(child.numero(0).getText()),
+                    int(child.numero(1).getText())
+                ]
+                shape_id = child.ID().getText()
+                transformations[shape_id] = {'type': 'TRASLACION', 'params': translation_values}
+
+                # Crear una nueva figura con las propiedades modificadas
+                if shape_id in self.shapes:
+                    original_shape = self.shapes[shape_id]
+
+                    # Imprimir los atributos de original_shape para verificar
+                    print(f"Original shape ID: {shape_id}")
+                    print(f"Original shape details: {original_shape.__dict__}")
+
+                    new_shape = copy.deepcopy(original_shape)
+                    if 'vertex' in new_shape.params:
+                        new_shape.params['vertex'] = [
+                            (vertex[0] + translation_values[0], vertex[1] + translation_values[1])
+                            for vertex in new_shape.params['vertex']
+                        ]
+                        self.shapes[transform_id] = new_shape
+                        print(f"Figura {shape_id} trasladada a nueva figura {transform_id} con vértices {new_shape.params['vertex']}")
+                    else:
+                        print(f"Error: La forma '{shape_id}' no tiene un atributo 'vertex' en params.")
+                else:
+                    print(f"Error: Forma '{shape_id}' no encontrada.")
+
+        if transformations:
+            self.transformations[transform_id] = transformations
+           
+
+        return None
 
     def render_scene(self):
         if not self.scene_invocada:
