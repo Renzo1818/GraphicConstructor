@@ -335,6 +335,25 @@ class CustomVisitor(GraphLangVisitor):
 
         return None
 
+ def visitDeclaracionEscena(self, ctx: GraphLangParser.DeclaracionEscenaContext):
+        formas_ids_nodes = ctx.ID()  # Obtiene los nodos de ID
+        formas = {}
+
+        # Itera sobre los nodos de ID para obtener los IDs como cadenas
+        for shape_id_node in formas_ids_nodes:
+            shape_id = shape_id_node.getText()  # Obtiene el texto del nodo como cadena
+            if shape_id in self.shapes:
+                formas[shape_id] = self.shapes[shape_id]
+            else:
+                print(f"Error: Forma '{shape_id}' no encontrada en línea {ctx.start.line}")
+
+        self.scene = formas
+        self.scene_invocada = True
+
+        # Renderiza la escena después de construirla
+        self.render_scene()
+
+        return None
     def render_scene(self):
         if not self.scene_invocada:
             print("Error: No se ha declarado una escena para renderizar.")
