@@ -1,7 +1,7 @@
 ENTERO a = 14;
-ENTERO b = 2;
+ENTERO b = 8;
 
-SI (a > 5 && b != 2){
+SI (a > 5 && b == 8){
     IMPRIMIR(a);
 }
 SINO{

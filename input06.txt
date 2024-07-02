@@ -1,0 +1,28 @@
+FORMA circulo1 {
+    tipo: CIRCULO,
+    radio: 5,
+    vertex: [4, 4]
+};
+
+FORMA rectangulo1 {
+    tipo: RECTANGULO,
+    ancho: 8,
+    alto: 4,
+    vertex: [8, 8]
+};
+
+FORMA cuadrado1 {
+    tipo: CUADRADO,
+    ancho: 4,
+    alto: 4,
+    vertex: [20, 20]
+};
+
+FORMA triangulo1 {
+    tipo: TRIANGULO,
+    vertex: [-15, -15], [-25, 25], [35, -35]
+};
+
+ESCENA {
+    FORMAS: [circulo1, rectangulo1, cuadrado1, triangulo1]
+};

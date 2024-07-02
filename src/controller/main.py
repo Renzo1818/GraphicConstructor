@@ -6,7 +6,7 @@ from ..Parser.GraphLangParser import GraphLangParser
 from ..Parser.CustomVisitor import CustomVisitor
 
 def main():
-    file_path = 'input01.txt'
+    file_path = 'input03.txt'
     input_stream = FileStream(file_path)
     lexer = GraphLangLexer(input_stream)
     stream = CommonTokenStream(lexer)

@@ -55,6 +55,14 @@ class CustomVisitor(GraphLangVisitor):
     def visitOpIncrementales(self, ctx: GraphLangParser.OpIncrementalesContext):
         return ctx.getText()
     
+    def visitSentenciaIf(self, ctx: GraphLangParser.SentenciaIfContext):
+        condicion = self.visit(ctx.expresion())
+        if condicion:
+            self.visit(ctx.bloque(0))  # Visitamos el primer bloque
+        elif ctx.getChild(3) is not None:  # Accedemos al SINO
+            self.visit(ctx.bloque(1))  # Visitamos el bloque del else si existe
+        return None
+    
     # Bloque
     def visitBloque(self, ctx: GraphLangParser.BloqueContext):
         for sentencia in ctx.sentencia():
@@ -180,7 +188,7 @@ class CustomVisitor(GraphLangVisitor):
 
         return self.visitChildren(ctx)
 
-      def eval_expresion_aritmetica_detalle(self, ctx: GraphLangParser.ExpresionAritmeticaDetalleContext):
+    def eval_expresion_aritmetica_detalle(self, ctx: GraphLangParser.ExpresionAritmeticaDetalleContext):
         def precedence(op):
             if op in ('+', '-'):
                 return 1
@@ -335,7 +343,7 @@ class CustomVisitor(GraphLangVisitor):
 
         return None
 
- def visitDeclaracionEscena(self, ctx: GraphLangParser.DeclaracionEscenaContext):
+    def visitDeclaracionEscena(self, ctx: GraphLangParser.DeclaracionEscenaContext):
         formas_ids_nodes = ctx.ID()  # Obtiene los nodos de ID
         formas = {}
 
@@ -354,6 +362,7 @@ class CustomVisitor(GraphLangVisitor):
         self.render_scene()
 
         return None
+    
     def render_scene(self):
         if not self.scene_invocada:
             print("Error: No se ha declarado una escena para renderizar.")

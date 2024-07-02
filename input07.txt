@@ -1,0 +1,38 @@
+FORMA circulo1 {
+    tipo: CIRCULO,
+    radio: 5,
+    vertex: [4, 4]
+};
+
+FORMA rectangulo1 {
+    tipo: RECTANGULO,
+    ancho: 8,
+    alto: 4,
+    vertex: [8, 8]
+};
+
+FORMA cuadrado1 {
+    tipo: CUADRADO,
+    ancho: 4,
+    alto: 4,
+    vertex: [20, 20]
+};
+
+
+TRANSFORMACION circuloT {
+    trasladar: [10, 12], figura: circulo1;
+};
+
+
+TRANSFORMACION rectanguloT {
+    trasladar: [14, 7], figura: rectangulo1;
+};
+
+TRANSFORMACION cuadradoT {
+    trasladar: [7, 3], figura: cuadrado1;
+};
+
+
+ESCENA {
+    FORMAS: [circulo1, rectangulo1, cuadrado1, circuloT, rectanguloT, cuadradoT]
+};
